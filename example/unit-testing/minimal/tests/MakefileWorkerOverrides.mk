@@ -8,7 +8,7 @@
 # TARGET_PLATFORM ?= x86_64-linux-gnu
 
 # MacOS + Brew Values
-CPPUTEST_HOME ?= /usr/local/Cellar/cpputest/3.8
+CPPUTEST_HOME ?= /usr/local/opt/cpputest
 TARGET_PLATFORM ?= 
 
 LD_LIBRARIES = -L$(CPPUTEST_HOME)/$(TARGET_PLATFORM)lib -lCppUTest -lCppUTestExt
