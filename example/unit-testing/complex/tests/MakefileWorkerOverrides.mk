@@ -8,7 +8,7 @@
 # TARGET_PLATFORM ?= x86_64-linux-gnu
 
 # MacOS + Brew Values
-CPPUTEST_HOME ?= /usr/local/Cellar/cpputest/3.8
+CPPUTEST_HOME ?= /usr/local/opt/cpputest
 TARGET_PLATFORM ?= 
 
 LD_LIBRARIES = -L$(CPPUTEST_HOME)/$(TARGET_PLATFORM)lib -lCppUTest -lCppUTestExt
@@ -20,8 +20,9 @@ UNITTEST_EXTRA_INC_PATHS += \
   -I$(CPPUTEST_HOME)/include \
   -I$(PROJECT_ROOT_DIR)/src \
   -I$(UNITTEST_ROOT)/ \
-  -I$(UNITTEST_ROOT)/stubs \
   -I$(PROJECT_ROOT_DIR)/littlefs \
+  -I$(PROJECT_ROOT_DIR)/analytics \
+  -I$(PROJECT_ROOT_DIR)/mutex \
   -I$(PROJECT_ROOT_DIR)
 
 CPPUTEST_CPPFLAGS += $(UNITTEST_EXTRA_INC_PATHS) \

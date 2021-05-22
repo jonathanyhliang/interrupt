@@ -5,7 +5,7 @@ export UNITTEST_ROOT := $(abspath .)
 export PROJECT_SRC_DIR := $(PROJECT_ROOT_DIR)
 
 export UNITTEST_SRC_DIR := $(UNITTEST_ROOT)/src
-export UNITTEST_MAKEFILES_DIR := $(UNITTEST_ROOT)/makefiles
+export UNITTEST_MAKEFILES_DIR := $(UNITTEST_ROOT)/mk
 export CPPUTEST_MAKFILE_INFRA := $(UNITTEST_ROOT)/MakefileWorkerOverrides.mk
 
 # Collects all the Makefile_*.mk in this directory and then invokes them using
